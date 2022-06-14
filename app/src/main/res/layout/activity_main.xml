@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:text="@string/txt_input"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/low_margin"
+        android:layout_marginTop="@dimen/low_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/txt_input"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:inputType="number"
+        android:background="#9C27B0"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:hint="enter number"
+
+        android:layout_marginTop="@dimen/low_margin"
+        android:layout_marginStart="@dimen/low_margin"
+        android:layout_marginEnd="@dimen/low_margin"/>
+    <RadioGroup
+        android:layout_marginStart="@dimen/high_margin"
+        android:layout_marginEnd="@dimen/high_margin"
+        android:layout_marginTop="@dimen/low_margin"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rbt_2to10"
+            android:checked="true"
+            android:textSize="20sp"
+            android:text="@string/rbt_2to10"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/rbt_10to2"
+            android:textSize="20sp"
+            android:text="@string/rbt_10to2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+    <Button
+        android:backgroundTint="#FFC107"
+        android:id="@+id/btn_convert"
+        android:layout_marginEnd="@dimen/low_margin"
+        android:layout_marginStart="@dimen/low_margin"
+        android:text="@string/btn_convert"
+        android:textSize="20sp"
+        android:layout_marginTop="@dimen/low_margin"
+        android:textAllCaps="false"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/btn_clear"
+        android:textSize="20sp"
+        android:layout_marginTop="@dimen/low_margin"
+        android:id="@+id/btn_Clear"
+        android:backgroundTint="#FFC107"
+        />
+    <TextView
+        android:text="@string/txt_output"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/low_margin"
+        android:layout_marginTop="@dimen/low_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txt_output"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="@dimen/low_margin"
+        android:layout_marginTop="@dimen/low_margin"
+        android:layout_marginEnd="@dimen/low_margin"
+        android:background="#9C27B0"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="created by : erfan shirvani"
+         android:layout_gravity="center"
+         android:textSize="@dimen/high_margin"
+         android:layout_marginTop="@dimen/high_margin"
+         android:textColor="@color/black"
+         android:textStyle="bold"
+         />
+</LinearLayout>
+
+
