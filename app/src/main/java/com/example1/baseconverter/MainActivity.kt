@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
 import androidx.core.content.res.ResourcesCompat
+import www.sanju.motiontoast.MotionToast
+import www.sanju.motiontoast.MotionToastStyle
 import kotlin.math.pow
 
 
@@ -53,8 +55,11 @@ class MainActivity : AppCompatActivity() {
         btnConvert.setOnClickListener {
 
             if (edInput.text.isBlank()){
-                Toast.makeText(this, "please enter value", Toast.LENGTH_SHORT).show()
-
+                MotionToast.createColorToast(this, "Empty Field!","Please Fill the Input",
+                    MotionToastStyle.WARNING,
+                    MotionToast.GRAVITY_BOTTOM,
+                    MotionToast.LONG_DURATION,
+                    ResourcesCompat.getFont(this, www.sanju.motiontoast.R.font.helvetica_regular))
             }
             else{
 
